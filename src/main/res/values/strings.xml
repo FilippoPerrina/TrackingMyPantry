@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">TrackingMyPantry</string>
+
+    //Login
+    <string name="app_description">Entra e tieni traccia della tua dispensa!</string>
+    <string name="app_button_login">Entra</string>
+    <string name="app_button_register">Registrati</string>
+    <string name="app_ask_register">E\' la prima volta?</string>
+    <string name="app_ask_email_login">Email</string>
+    <string name="app_ask_password_login">Password</string>
+
+    //Registration
+    <string name="app_description_registration">Inizia a gestire la tua dispensa!</string>
+    <string name="app_ask_username">Nome utente</string>
+    <string name="app_ask_email_registration">Email</string>
+    <string name="app_ask_password_registration">Password</string>
+    <string name="app_button_registration">Registrati</string>
+
+    //AddItem
+    <string name="get_product">Cerca</string>
+    <string name="add_product">Aggiungi</string>
+    <string name="get_barcode">Codice a barre</string>
+
+    //RemoveItem
+    <string name="remove_local">Rimuovi dalla tua dispensa</string>
+    <string name="remove_remote">Rimuovi dalla dispensa globale</string>
+    <string name="remove_name">Nome</string>
+
+    //CompileItem
+    <string name="compile_barcode">Codice a barre</string>
+    <string name="compile_name">Nome</string>
+    <string name="compile_description">Descrizione</string>
+    <string name="compile_add_button">Aggiungi</string>
+
+    //SelectItem
+    <string name="select_add_button">Aggiungi</string>
+    <string name="select_text">Il prodotto che cerchi non è tra questi? \nAggiungilo alla dispensa globale</string>
+    <string name="select_no_prof_found">Spiacente, nessun risultato trovato. \nSei il primo utente a cercare questo prodotto.</string>
+
+    //FilterFragment
+    <string name="filter_category">Categoria:</string>
+    <string name="checkbox_fruit">Frutta &amp; Verdura</string>
+    <string name="checkbox_sweet">Dolci</string>
+    <string name="checkbox_cereal">Cerali &amp; derivati</string>
+    <string name="checkbox_generic">Alimenti di base</string>
+    <string name="checkbox_meat">Carne &amp; Pesce</string>
+    <string name="checkbox_beverage">Bevande</string>
+    <string name="checkbox_milk">Latte &amp; Derivati</string>
+    <string name="filter_deadline">Data di scadenza:</string>
+    <string name="checkbox_today">Oggi</string>
+    <string name="checkbox_week">Questa settimana</string>
+    <string name="checkbox_month">Questo mese</string>
+    <string name="filter_quantity">Quantità:</string>
+    <string name="filter_quantity_from">Da:</string>
+    <string name="filter_quantity_to">A:</string>
+    <string name="button_apply_filter">Applica</string>
+    <string name="button_remove_filter">Rimuovi Filtri</string>
+    <string-array name="select_category">
+        <item>Frutta &amp; Verdura</item>
+        <item>Dolci</item>
+        <item>Cerali &amp; derivati</item>
+        <item>Alimenti di base</item>
+        <item>Carne &amp; Pesce</item>
+        <item>Bevande</item>
+        <item>Latte &amp; Derivati</item>
+    </string-array>
+
+    //ShowDetailsFragmentMain
+    <string name="show_details_not_found">Valore non trovato</string>
+    <string name="show_label_barcode">Codice a barre:</string>
+    <string name="show_label_name">Nome:</string>
+    <string name="show_label_description">Descrizione:</string>
+    <string name="show_label_category">Categoria:</string>
+    <string name="show_label_quantity">Quantità:</string>
+    <string name="show_label_end_date">Data di scadenza:</string>
+
+    //Product
+    <string name="product_details">Dettagli</string>
+
+    //ShowDetailsFragmentSelect
+    <string name="show_select_button">Seleziona</string>
+
+</resources>

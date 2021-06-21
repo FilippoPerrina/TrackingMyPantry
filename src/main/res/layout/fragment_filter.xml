@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVerticalLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVerticalRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="280dp" />
+
+        <TextView
+            android:id="@+id/textViewCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/filter_category"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCategories">
+
+            <RadioButton
+                android:id="@+id/radioFruit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_fruit" />
+
+            <RadioButton
+                android:id="@+id/radioSweet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_sweet" />
+
+            <RadioButton
+                android:id="@+id/radioCereal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_cereal" />
+
+            <RadioButton
+                android:id="@+id/radioGeneric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_generic" />
+
+            <RadioButton
+                android:id="@+id/radioMeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_meat" />
+
+            <RadioButton
+                android:id="@+id/radioBeverage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_beverage" />
+
+            <RadioButton
+                android:id="@+id/radioMilk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_milk" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewDeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_deadline"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupCategory" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDeadline">
+
+            <RadioButton
+                android:id="@+id/radioToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_today" />
+
+            <RadioButton
+                android:id="@+id/radioWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_week" />
+
+            <RadioButton
+                android:id="@+id/radioMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_month" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_quantity"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupEndDate" />
+
+        <EditText
+            android:id="@+id/editTextFromQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="2"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/textViewFromQuantity"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuantity" />
+
+        <EditText
+            android:id="@+id/editTextToQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="2"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/textViewToQuantity"
+            app:layout_constraintTop_toTopOf="@+id/editTextFromQuantity" />
+
+        <TextView
+            android:id="@+id/textViewFromQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_quantity_from"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextFromQuantity"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVertical" />
+
+        <TextView
+            android:id="@+id/textViewToQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/filter_quantity_to"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextToQuantity"
+            app:layout_constraintStart_toEndOf="@+id/editTextFromQuantity" />
+
+        <Button
+            android:id="@+id/buttonApplyFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="@string/button_apply_filter"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFromQuantity" />
+
+        <Button
+            android:id="@+id/buttonRemoveFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp"
+            android:text="@string/button_remove_filter"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFromQuantity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

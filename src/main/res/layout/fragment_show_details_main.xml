@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/showName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/show_details_not_found"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/showLabelName" />
+
+        <TextView
+            android:id="@+id/showBarcode"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/show_details_not_found"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/showName" />
+
+        <TextView
+            android:id="@+id/showDescription"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/show_details_not_found"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/showBarcode" />
+
+        <TextView
+            android:id="@+id/showLabelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/show_label_name"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/showLabelBarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_barcode"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/showBarcode"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft" />
+
+        <TextView
+            android:id="@+id/showLabelDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_description"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/showDescription"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft" />
+
+        <TextView
+            android:id="@+id/showLabelCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_category"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/showCategory"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft" />
+
+        <TextView
+            android:id="@+id/showCategory"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/show_details_not_found"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/showDescription" />
+
+        <Button
+            android:id="@+id/buttonAddCategory"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/showCategory"
+            app:layout_constraintStart_toEndOf="@+id/showLabelCategory" />
+
+        <TextView
+            android:id="@+id/showLabelQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_quantity"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/showQuantity"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft" />
+
+        <TextView
+            android:id="@+id/showQuantity"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/show_details_not_found"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/showCategory" />
+
+        <Button
+            android:id="@+id/buttonAddQuantity"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/showQuantity"
+            app:layout_constraintStart_toEndOf="@+id/showLabelQuantity" />
+
+        <TextView
+            android:id="@+id/showLabelEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_end_date"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/showEndDate"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft" />
+
+        <TextView
+            android:id="@+id/showEndDate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/show_details_not_found"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/showQuantity" />
+
+        <Button
+            android:id="@+id/buttonAddEndDate"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/showEndDate"
+            app:layout_constraintStart_toEndOf="@+id/showLabelEndDate" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVerticalLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVerticalRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="280dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
